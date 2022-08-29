@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+header div{
+    display: block;
+    text-align: center;
+    padding: 0px 0 30px 0;
+}
+
+header nav{
+    text-align: center;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-weight: bolder;
+}
+
+header nav ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+header img{
+    width: 300px;
+}
+
+.sec-carousel{
+    background-color: #000;
+    padding-top: 50px;
+}
+
+.carousel-inner{
+    height: 95vh;
+    border-radius: 25% 25% 0 0;
+}
+
+#sec-carousel__slider img{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.sec-nosotros{
+    background-color: #000;
+    padding: 10vh 100px;
+}
+
+.sec-nosotros__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.sec-nosotros__texto{
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.sec-nosotros__texto h1{
+    color: #CA0610;
+}
+
+.sec-nosotros__img{
+    background-image: url("../img/nosotros.JPG");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+}
+
+.sec-nosotros__redes{
+    display: flex;
+    justify-content: flex-end;
+    margin:  -180px 0 50px 0;
+}
+
+.sec-nosotros__redes div{
+    background-color: #A6A6A6;
+    width: fit-content;
+    padding: 15px;
+    margin: 0 5px;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.sec-nosotros__redes img{
+    width: 100px;
+    height: auto;
+}
