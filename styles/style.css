@@ -41,7 +41,26 @@
     width: 300px;
 }
 
+.main-header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-header a:hover{
+    color: #CA0610;
+}
+
+span[underline]{
+    text-decoration: overline;
+    color: #CA0610;
+}
+
+.main-header a:hover::after{
+    content: attr(underline);
+}
+
 .sec-carousel{
+    width: 100vw;
     background-color: #000;
     padding-top: 50px;
 }
@@ -59,6 +78,7 @@
 }
 
 .sec-nosotros{
+    width: 100vw;
     background-color: #000;
     padding: 10vh 100px;
 }
@@ -75,6 +95,7 @@
     width: 50%;
     text-align: center;
     margin: 10px;
+    line-height: 1.8;
 }
 
 .sec-nosotros__texto h1{
@@ -92,7 +113,7 @@
 .sec-nosotros__redes{
     display: flex;
     justify-content: flex-end;
-    margin:  -180px 0 50px 0;
+    margin:  -150px 0 50px 0;
 }
 
 .sec-nosotros__redes div{
@@ -105,7 +126,7 @@
 }
 
 .sec-nosotros__redes img{
-    width: 100px;
+    width: 75px;
     height: auto;
 }
 
@@ -128,10 +149,83 @@
     animation-name: fadeOutMenu;
     animation-duration: 2s;
     animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
 .navAgain{
     animation-name: fadeInMenu;
     animation-duration: 1s;
     animation-delay: 0s;
+}
+
+.sec-contacto-posteos{
+    width: 100vw;
+    background-image: url('../img/imagen\ de\ fondo.JPG');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.sec-contacto-posteos__posteos{
+    margin: auto;
+    width: fit-content;
+    color: #fff;
+    background-color: #CA0610;
+    padding: 20px;
+}
+
+.sec-contacto-posteos__contacto{
+    margin: auto;
+    width: 100vw;
+    color: #CA0610;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 1%;
+}
+
+.sec-contacto-posteos__contacto__form{
+    width: 50%;
+    margin: auto;
+}
+
+.sec-contacto-posteos__contacto__form h2{
+    color: #fff;
+    background-color: #CA0610;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.btn{
+    color: #fff;
+    background-color: #CA0610;
+}
+
+.btn:hover{
+    background-color: rgba(202, 6, 16, 0.6);
+    color: #fff;
+    border: 1px solid rgba(202, 6, 16, 0.6);
+}
+
+textarea{
+    resize: none;
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+    background-color: #000;
+    height: auto;
+    padding: 20px 0;
+}
+
+footer p{
+    color: #fff;
+    margin-bottom: 0;
 }

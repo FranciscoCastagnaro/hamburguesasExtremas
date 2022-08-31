@@ -20,9 +20,9 @@
         </div>
         <nav>
             <ul>
-                <li>Nosotros</li>
+                <a href="#sec-nosotros"><li>Nosotros</li></a>
                 <li>Menú</li>
-                <li>Contacto</li>
+                <a href="#sec-contacto-posteos"><li>Contacto</li></a>
                 <li>Trabaja con nosotros</li>
                 <li>Sucursales</li>
             </ul>
@@ -46,7 +46,7 @@
     </section>
 
 
-    <section class="sec-nosotros">
+    <section class="sec-nosotros" id="sec-nosotros">
         <div class="sec-nosotros__redes">
             <div>
                 <img src="./img/instagram-logo.png" alt="instagram-logo">
@@ -60,12 +60,24 @@
                 <h1>NOSOTROS</h1>
                 <p>
                     Somos una empresa gastronómica con más de 25 años de trayectoria en el país. 
-                    Extremas surge de la necesidad que identificamos en el mercado Argentino de lanzar un producto de máxima calidad, expendido rápidamente y a un precio muy accesible. Desde esta visión, en el año 2018 nos pusimos a trabajar para desarrollar nuestra marca, la cual entendemos que en pocos años va a liderar el rubro de Fast Food en nuestro país.
+                </p>
+                <p>
+                    Extremas surge de la necesidad que identificamos en el mercado argentino de lanzar un producto de máxima calidad, expendido rápidamente a un precio muy accesible. Es por ello que en el año 2018 nos pusimos a trabajar para desarrollar nuestra marca EXTREMAS, la cual entendemos que en pocos años va a liderar el rubro de Fast Food en nuestro país.
+                </p>
+                <p>
                     Nuestras sucursales están equipadas con maquinaria de última tecnología y con una fuerte imagen corporativa, ubicadas estratégicamente en las ciudades más importantes del país.
-                    Contamos con un equipo de profesionales los cuales garantizan nuestros estándares.
-                    Nuestro lema es la calidad y el respeto por nuestros clientes.
-                    Nuestra visión es brindar hamburguesas de máxima calidad a precios accesibles para la mayoría de la sociedad Argentina.
-                    Te esperamos para que descubras algo nuevo y realmente muy bueno. Sabemos que una vez que nos conozcas siempre vas a volver.
+                </p>
+                <p>
+                    Contamos con un equipo de profesionales que nos garantizan cumplir con nuestros objetivos y posicionarnos dentro de los más altos estándares en el mundo de la gastronomía.
+                </p>
+                <p>
+                    Nuestro lema es calidad y respeto por nuestros clientes. 
+                </p>    
+                <p>
+                    Nuestra Visión se basa en hamburguesas de máxima calidad a precios accesibles y un servicio cálido y rápido.
+                </p>    
+                <p>
+                    Te esperamos para que descubras EXTREMAS, una vez que nos conoces siempre vas a volver.
                 </p>
             </div>
             <div class="sec-nosotros__img">
@@ -73,17 +85,33 @@
         </div>
     </section>
 
-    <section class="sec-contacto-posteos">
+    <section id="sec-contacto-posteos" class="sec-contacto-posteos">
         <div class="sec-contacto-posteos__posteos">
             <h2>@hamburguesasextremasoficial</h2>
         </div>
-        <div class="sec-contacto-redes__contacto">
-            <h2>CONTACTO</h2>
+        <div class="sec-contacto-posteos__contacto">
+            <div class="sec-contacto-posteos__contacto__form">
+                <h2>Contacto</h2>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <input type="text" class="form-control" id="form-name" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                    <input type="email" class="form-control" id="form-email" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" placeholder="Mensaje" id="form-mensaje" rows="3"></textarea>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn mb-3">Enviar</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>Extremas hamburguesas premium al mejor precio</p>
+        <p>Extremas - hamburguesas premium al mejor precio</p>
     </footer>
 
     <!-- BOOTSTRAP-JS -->

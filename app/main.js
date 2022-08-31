@@ -6,7 +6,7 @@ my_window.scroll(function () {
 
     console.log(position)
 
-    if (my_window.scrollTop()  > 900) {
+    if (my_window.scrollTop()  > 700) {
         $('.main-header').addClass('navup');
         $('.main-header').removeClass('navAgain');
         flag = true
