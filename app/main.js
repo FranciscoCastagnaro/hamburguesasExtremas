@@ -4,7 +4,6 @@ var flag = false;
 
 my_window.scroll(function () {
 
-    //console.log(position)
 
     if (my_window.scrollTop()  > 200) {
         $('.main-header').addClass('navup');

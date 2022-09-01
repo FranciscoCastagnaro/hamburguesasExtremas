@@ -11,12 +11,13 @@
     position: fixed;
     z-index: 1;
     width: 100%;
+    margin-top: -200px;
 }
 
 .main-header div{
     display: block;
     text-align: center;
-    padding: 0px 0 30px 0;
+    margin-bottom: -220px;
 }
 
 .main-header nav{
@@ -38,7 +39,8 @@
 }
 
 .main-header img{
-    width: 300px;
+    width: 350px;
+    height: 100%;
 }
 
 .main-header a{
@@ -50,14 +52,6 @@
     color: #CA0610;
 }
 
-span[underline]{
-    text-decoration: overline;
-    color: #CA0610;
-}
-
-.main-header a:hover::after{
-    content: attr(underline);
-}
 
 .sec-carousel{
     width: 100vw;
@@ -67,7 +61,7 @@ span[underline]{
 
 .carousel-inner{
     height: 95vh;
-    border-radius: 25% 25% 0 0;
+    border-radius: 10% 10% 0 0;
 }
 
 #sec-carousel__slider img{
@@ -78,7 +72,15 @@ span[underline]{
 }
 
 #carousel1{
-    margin-top: -1000px;
+    margin-top: -50px;
+}
+
+#carousel2{
+    margin-top: -100px;
+}
+
+#carousel3{
+    margin-top: -50px;
 }
 
 .sec-nosotros{
@@ -99,7 +101,8 @@ span[underline]{
     width: 50%;
     text-align: center;
     margin: 10px;
-    line-height: 1.8;
+    line-height: 1.2;
+    font-size: small;
 }
 
 .sec-nosotros__texto h1{
@@ -107,7 +110,7 @@ span[underline]{
 }
 
 .sec-nosotros__img{
-    background-image: url("../img/nosotros.JPG");
+    background-image: url("../img/Nosotros.png");
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -209,12 +212,19 @@ span[underline]{
 .btn{
     color: #fff;
     background-color: #CA0610;
+    border-radius: 0px;
 }
 
 .btn:hover{
     background-color: rgba(202, 6, 16, 0.6);
     color: #fff;
     border: 1px solid rgba(202, 6, 16, 0.6);
+}
+
+.menu{
+    height: 100vh;
+    background-color: #000;
+    padding-top: 300px;
 }
 
 textarea{
