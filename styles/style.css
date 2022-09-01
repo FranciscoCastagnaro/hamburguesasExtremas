@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    max-width:100%;
 }
 
 .main-header{
     background-color: rgba(0, 0, 0, 0.3);
-    width: 100vw;
     position: fixed;
     z-index: 1;
-
+    width: 100%;
 }
 
 .main-header div{
@@ -77,6 +77,10 @@ span[underline]{
 
 }
 
+#carousel1{
+    margin-top: -1000px;
+}
+
 .sec-nosotros{
     width: 100vw;
     background-color: #000;
@@ -113,7 +117,7 @@ span[underline]{
 .sec-nosotros__redes{
     display: flex;
     justify-content: flex-end;
-    margin:  -150px 0 50px 0;
+    margin:  -125px 0 50px 0;
 }
 
 .sec-nosotros__redes div{
