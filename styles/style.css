@@ -221,7 +221,7 @@
     border: 1px solid rgba(202, 6, 16, 0.6);
 }
 
-.menu{
+.menu, .sucursales{
     height: 100vh;
     background-color: #000;
     padding-top: 300px;
