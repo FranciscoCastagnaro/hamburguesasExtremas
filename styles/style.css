@@ -1,8 +1,13 @@
+@font-face {
+    font-family: 'britannic-bold-regular';
+    src: url(./fonts/Britannic\ Bold\ Regular.ttf) format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'britannic-bold-regular', sans-serif;
     max-width:100%;
 }
 
@@ -107,7 +112,7 @@
     text-align: center;
     margin: 10px;
     line-height: 1.2;
-    font-size: small;
+    font-size: medium;
 }
 
 .sec-nosotros__texto h1{
@@ -227,16 +232,24 @@
 }
 
 .menu, .sucursales{
-    height: 100vh;
+
     background-color: #000;
     padding-bottom: 50px;
-}
-
-.menu{
     height: fit-content;
+    padding-top: 50px;
+
 }
 
-.menu__display{
+.menu h1, .sucursales h1{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: #CA0610;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.menu__display, .sucursales__display{
     margin: auto;
     width: 75%;
     display: flex;
@@ -244,6 +257,35 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    margin-top: 100px;
+}
+
+.sucursales__display{
+    width: 50%;
+    margin-top: 100px;
+}
+
+.suc-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 400px;
+}
+
+.nombre-suc{
+    text-transform: uppercase;
+    background-color: #CA0610;
+    color: #fff;
+    padding: 15px;
+    border-radius: 2px 2px 0 0;
+}
+
+.dire-suc{
+    margin: 0;
+    padding: 15px;
+
 }
 
 .card{
@@ -284,4 +326,84 @@ footer{
 footer p{
     color: #fff;
     margin-bottom: 0;
+}
+
+/* MEDIA QUERYS */
+
+@media only screen and (min-width:901px) and (max-width:1400px){
+
+    .carousel-inner{
+        margin: 250px 0 -30px 0;
+        border-radius: 0;
+    }
+
+    .main-header nav ul{
+        gap: 30px;
+    }
+
+    .sec-nosotros__redes{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:900px){
+
+    .carousel-inner{
+        margin: 250px 0 -500px 0;
+        border-radius: 0;
+    }
+
+    .main-header nav ul{
+        gap: 30px;
+    }
+
+    .sec-nosotros__redes{
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width:480px) and (max-width:767px){
+
+    .main-header nav ul{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .carousel-inner{
+        margin: 380px 0 -550px 0;
+        border-radius: 0;
+    }
+
+    .sec-nosotros__redes{
+        justify-content: space-around;
+    }
+
+    .sec-nosotros__info{
+        flex-direction: column;
+    }
+
+    .sec-nosotros__img{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width:479px){
+
+    .main-header nav ul{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sec-nosotros__info{
+        flex-direction: column;
+    }
+
+    .sec-nosotros__img{
+        width: 100%;
+    }
+
+    
 }
