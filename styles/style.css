@@ -269,23 +269,51 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #fff;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 2px;
     width: 400px;
+    height: 500px;
+    background-image: url("../img/extremasIcono.png");
+    background-position: center;
+    background-size:contain;
+    gap: 50px;
+}
+
+.location-suc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 15px;
+}
+
+.location-suc img{
+    width: 75px;
+    height: 75px;
+    filter: invert(100%);
 }
 
 .nombre-suc{
     text-transform: uppercase;
-    background-color: #CA0610;
+    font-size: xx-large;
     color: #fff;
-    padding: 15px;
-    border-radius: 2px 2px 0 0;
+    background-color: #EF2B24;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 .dire-suc{
     margin: 0;
-    padding: 15px;
-
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #EF2B24;
+    border-radius: 2px;
+    padding: 8px;
 }
 
 .card{
@@ -388,6 +416,16 @@ footer p{
         width: 100%;
     }
 
+    .location-suc{
+        flex-direction: column;
+    }
+
+    .suc-card{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+    }
+
 }
 
 @media only screen and (min-width:300px) and (max-width:479px){
@@ -405,5 +443,15 @@ footer p{
         width: 100%;
     }
 
+    .location-suc{
+        flex-direction: column;
+    }
     
+    .suc-card{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 500px;
+    }
+
+
 }
