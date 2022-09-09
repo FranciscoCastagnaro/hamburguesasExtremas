@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'britannic-bold-regular';
-    src: url(./fonts/Britannic\ Bold\ Regular.ttf) format('truetype');
+    src: url("./fonts/Britannic-Bold-Regular.ttf") format('truetype');
 }
 
 *{
