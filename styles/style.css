@@ -43,9 +43,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 140px;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .main-header img{
@@ -61,7 +61,6 @@
 .main-header a:hover{
     color: #CA0610;
 }
-
 
 .sec-carousel{
     width: 100vw;
@@ -143,7 +142,7 @@
 }
 
 .sec-nosotros__redes img{
-    width: 75px;
+    width: 70px;
     height: auto;
 }
 
@@ -238,6 +237,12 @@
     height: fit-content;
     padding-top: 50px;
 
+}
+
+.menu{
+    background-image: url('../img/imagen-de-fondo.JPG');
+    background-position: center;
+    background-size: cover;
 }
 
 .menu h1, .sucursales h1{
@@ -343,6 +348,59 @@
     align-items: center;
 }
 
+.card-suc{
+    width: 300px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+#suc1{
+    background-image: url("../img/extremas_sucursales/locales-story1.jpg");
+}
+#suc2{
+    background-image: url("../img/extremas_sucursales/locales-story2.jpg");
+}
+#suc3{
+    background-image: url("../img/extremas_sucursales/locales-story3.jpg");
+}
+#suc4{
+    background-image: url("../img/extremas_sucursales/locales-story4.jpg");
+}
+#suc5{
+    background-image: url("../img/extremas_sucursales/locales-story5.jpg");
+}
+#suc6{
+    background-image: url("../img/extremas_sucursales/locales-story6.jpg");
+}
+#suc7{
+    background-image: url("../img/extremas_sucursales/locales-story7.jpg");
+}
+#suc8{
+    background-image: url("../img/extremas_sucursales/locales-story8.jpg");
+}
+#suc9{
+    background-image: url("../img/extremas_sucursales/locales-story9.jpg");
+}
+#suc10{
+    background-image: url("../img/extremas_sucursales/locales-story11.jpg");
+}
+#suc11{
+    background-image: url("../img/extremas_sucursales/locales-story12.jpg");
+}
+#suc12{
+    background-image: url("../img/extremas_sucursales/locales-story13.jpg");
+}
+#suc13{
+    background-image: url("../img/extremas_sucursales/locales-story14.jpg");
+}
+#suc14{
+    background-image: url("../img/extremas_sucursales/locales-story15.jpg");
+}
+#suc15{
+    background-image: url("../img/extremas_sucursales/Pompeya1.jpg");
+}
+
 textarea{
     resize: none;
 }
@@ -362,19 +420,43 @@ footer p{
 
 /* MEDIA QUERYS */
 
-@media only screen and (min-width:901px) and (max-width:1400px){
+@media only screen and (min-width:1101px) and (max-width:1400px){
 
     .carousel-inner{
-        margin: 250px 0 -30px 0;
-        border-radius: 0;
+        margin: 0px 0 -175px 0;
     }
 
     .main-header nav ul{
-        gap: 30px;
+        gap: 75px;
     }
 
     .sec-nosotros__redes{
-        justify-content: space-around;
+        justify-content: flex-end;
+    }
+
+    .sec-nosotros__redes img{
+        width: 60px;
+    }
+
+}
+
+@media only screen and (min-width:901px) and (max-width:1100px){
+
+    .carousel-inner{
+        margin: 0px 0 -350px 0;
+    }
+
+    .main-header nav ul{
+        gap: 35px;
+        font-size: 1.3rem;
+    }
+
+    .sec-nosotros__redes{
+        justify-content: flex-end;
+    }
+
+    .sec-nosotros__redes img{
+        width: 60px;
     }
 
 }
@@ -387,11 +469,16 @@ footer p{
     }
 
     .main-header nav ul{
-        gap: 30px;
+        gap: 15px;
+        font-size: 1.3rem;
     }
 
     .sec-nosotros__redes{
-        justify-content: space-around;
+        justify-content: flex-end;
+    }
+
+    .sec-nosotros__redes img{
+        width: 50px;
     }
 
 }
@@ -401,6 +488,7 @@ footer p{
     .main-header nav ul{
         flex-direction: column;
         gap: 5px;
+        font-size: 1.1rem;
     }
 
     .carousel-inner{
@@ -430,6 +518,10 @@ footer p{
         width: 500px;
     }
 
+    .sec-nosotros__redes img{
+        width: 50px;
+    }
+
 }
 
 @media only screen and (min-width:300px) and (max-width:479px){
@@ -437,6 +529,7 @@ footer p{
     .main-header nav ul{
         flex-direction: column;
         gap: 5px;
+        font-size: 1.1rem;
     }
 
     .sec-nosotros__info{
@@ -457,5 +550,8 @@ footer p{
         width: 500px;
     }
 
+    .sec-nosotros__redes img{
+        width: 45px;
+    }
 
 }
