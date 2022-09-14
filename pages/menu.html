@@ -26,7 +26,7 @@
                 <a href="../index.html#sec-nosotros"><li>Nosotros</li></a>
                 <a href="../pages/menu.html"><li>Menú</li></a>
                 <a href="../index.html#sec-contacto-posteos"><li>Contacto</li></a>
-                <li>Trabaja con nosotros</li>
+                <a href="#" id="btn_trabaja"><li>Trabaja con nosotros</li></a>
                 <a href="../pages/sucursales.html"><li>Sucursales</li></a>
             </ul>
         </nav>
@@ -98,6 +98,74 @@
         </div>
     </section>
 
+    <!-- Modal Trabaja con Nosotros -->
+    <div class="modal fade" id="modalTrabaja" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Trabaja con nosotros</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="row">
+
+                  <div class="col-md-6 multi-horizontal" data-for="cv_nombre">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_nombre"></label>
+                          <input type="text" class="form-control item_form" id="cv_nombre" data-form-field="Name" required="" placeholder="Nombre" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);">
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 multi-horizontal" data-for="cv_apellido">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_apellido"></label>
+                          <input type="text" class="form-control item_form" id="cv_apellido" data-form-field="Name" required="" placeholder="Apellido" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);">
+                      </div>
+                  </div>
+                            
+                  <div class="col-md-6 multi-horizontal" data-for="cv_telefono">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_telefono"></label>
+                          <input type="number" class="form-control item_form" id="cv_telefono" data-form-field="Name" required="" placeholder="Teléfono" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);">
+                      </div>
+                  </div>
+                  <div class="col-md-6 multi-horizontal" data-for="cv_mail">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_mail"></label>
+                          <input type="email" class="form-control item_form" id="cv_mail" data-form-field="Email" required="" placeholder="E-mail" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);">
+                      </div>
+                  </div>
+
+                  <div class="col-md-6 multi-horizontal" data-for="cv_sector">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_sector"></label>
+                          <select type="text" class="form-control item_form" id="cv_sector" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); display: none;"></select>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-12 multi-horizontal" style="margin-top: 10px;" data-for="cv_upload">
+                      <div class="form-group">
+                          <label class="form-control-label item_form" for="cv_upload">Adjunte su CV</label>
+                          <input type="file" class="form-control item_form" id="cv_upload" placeholder="Seleccione su CV" buttontext="Seleccionar">
+                      </div>
+                  </div>
+                            
+                  <div class="col-md-12 multi-horizontal" data-for="cv_mensaje">
+                      <div class="form-group">
+                          <label class="form-control-label" for="cv_mensaje"></label>
+                          <textarea type="text" class="form-control item_form" id="cv_mensaje" data-form-field="Name" required="" placeholder="Mensaje" style="border-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255);"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+          </div>
+      </div>
+      </div>
+    </div>
+
     <footer>
         <p>Extremas - hamburguesas premium al mejor precio</p>
     </footer>
@@ -108,7 +176,7 @@
     src="https://code.jquery.com/jquery-3.6.1.js"
     integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
-    <script src="./app/main.js"></script>
+    <script src="../app/main.js"></script>
 
 </body>
 </html>
