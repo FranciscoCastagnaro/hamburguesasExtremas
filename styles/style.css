@@ -45,7 +45,7 @@
     justify-content: center;
     gap: 140px;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .main-header img{
@@ -119,7 +119,7 @@
 }
 
 .sec-nosotros__img{
-    background-image: url("../img/Nosotros.png");
+    background-image: url("../img/Nosotros.jpeg");
     background-size: cover;
     background-position: center;
     width: 50%;
@@ -422,12 +422,9 @@ footer p{
 
 @media only screen and (min-width:1101px) and (max-width:1400px){
 
-    .carousel-inner{
-        margin: 0px 0 -175px 0;
-    }
-
     .main-header nav ul{
-        gap: 75px;
+        gap: 50px;
+        font-size: 1.1rem;
     }
 
     .sec-nosotros__redes{
@@ -435,7 +432,7 @@ footer p{
     }
 
     .sec-nosotros__redes img{
-        width: 60px;
+        width: 50px;
     }
 
 }
@@ -443,12 +440,12 @@ footer p{
 @media only screen and (min-width:901px) and (max-width:1100px){
 
     .carousel-inner{
-        margin: 0px 0 -350px 0;
+        margin: 0px 0 -50px 0;
     }
 
     .main-header nav ul{
         gap: 35px;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .sec-nosotros__redes{
@@ -464,13 +461,13 @@ footer p{
 @media only screen and (min-width:768px) and (max-width:900px){
 
     .carousel-inner{
-        margin: 250px 0 -500px 0;
+        margin: 250px 0 -100px 0;
         border-radius: 0;
     }
 
     .main-header nav ul{
         gap: 15px;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .sec-nosotros__redes{
@@ -479,6 +476,10 @@ footer p{
 
     .sec-nosotros__redes img{
         width: 50px;
+    }
+
+    .sec-nosotros__info{
+        flex-direction: column;
     }
 
 }
@@ -492,7 +493,7 @@ footer p{
     }
 
     .carousel-inner{
-        margin: 380px 0 -550px 0;
+        margin: 380px 0 -150px 0;
         border-radius: 0;
     }
 
